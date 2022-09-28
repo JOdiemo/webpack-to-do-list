@@ -2,20 +2,17 @@
 
 # Project Name
 
-> Description the project.
-
+> To Do List. The To do list app is a project which allows you to write down a task that you want to do (you schedule a task) you can mark them as completed or edit them and finally delete or clear all the completed tasks which are marked as completed. Built With , HTML , CSS, JAVASCRIPT, ES6 MODULES , WEBPACK, LINTER
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- JavaScript
+- CSS
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
-
-
+[Live Demo Link](https://github.com/JOdiemo/webpack-to-do-list/tree/feature-structure)
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
@@ -42,15 +39,10 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/JOdiemo)
+- Twitter: [@twitterhandle](https://twitter.com/jorumodiemo)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/jorumodiemo)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
