@@ -1,9 +1,10 @@
 import './style.css';
+import  Todos from "./todolist.js"
+import thingsTodo from './applications.js';
+alert("new onindex.js")
+const todosList = new Todos();
+thingsTodo(todosList)
 
-const todosList = [
-  { description: 'wash the dishes', completed: false, index: 1 },
-  { description: 'complete To Do List project', completed: false, index: 2 },
-];
 
 const render = (list) => {
   const sortedTodos = list.sort((a, b) => a.index - b.index);
