@@ -1,21 +1,30 @@
 import './style.css';
-import  Todos from "./todolist.js"
-import thingsTodo from './applications.js';
-alert("new onindex.js")
+import thingsTodo from './app.js';
+import Todos from './todolist.js';
+
 const todosList = new Todos();
-thingsTodo(todosList)
+thingsTodo(todosList);
 
+// add todo
+const addBtn = document.querySelector('.add-btn');
+addBtn.addEventListener('click', () => {
+  const id = `id${Math.random().toString(10).slice(2, 4)}`;
+  const description = document.querySelector('.description').value.trim();
+  const completed = false;
+  const index = todosList.list.length + 1;
 
-const render = (list) => {
-  const sortedTodos = list.sort((a, b) => a.index - b.index);
-  const listContainer = document.querySelector('.todos');
-  let listHtml = '';
-  sortedTodos.forEach((todo) => {
-    listHtml += ` <div class="item">
-        <input type="checkbox" /><span> ${todo.description}</span>
-    </div>`;
-  });
-  listContainer.innerHTML = listHtml;
-};
+  const newTodo = {
+    id, description, completed, index,
+  };
+  if (description) {
+    todosList.addItems(newTodo);
+    thingsTodo(todosList);
+  }
+});
 
-render(todosList);
+// clear all completed todos
+const clearBtn = document.querySelector('.clear-btn');
+clearBtn.addEventListener('click', () => {
+  todosList.clearCompletedTodos();
+  thingsTodo(todosList);
+});
